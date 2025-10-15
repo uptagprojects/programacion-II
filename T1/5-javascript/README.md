@@ -72,7 +72,7 @@ Para asignar valores (`=`, `+=`, `-=`, etc.).
 | Operador | Nombre | Descripción |
 | :--- | :--- | :--- |
 | **`&&`** | AND Lógico | Devuelve `true` si ambos operandos son verdaderos. |
-| **`||`** | OR Lógico | Devuelve `true` si al menos un operando es verdadero. |
+| **`\|\|`** | OR Lógico | Devuelve `true` si al menos un operando es verdadero. |
 | **`!`** | NOT Lógico | Invierte el valor booleano (`true` se convierte en `false`). |
 
 -----
