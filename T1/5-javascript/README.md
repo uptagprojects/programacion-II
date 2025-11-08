@@ -186,7 +186,7 @@ formulario.addEventListener('submit', function(event) {
 
 -----
 
-## formación Adicional Pertinente
+## Información Adicional
 
 ### Ámbito (*Scope*)
 
