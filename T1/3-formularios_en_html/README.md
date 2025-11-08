@@ -377,7 +377,7 @@ Forma más antigua, pero aún válida. Solo puede contener texto.
 
 ## 💡 Información Adicional Pertinente
 
-### A. Etiquetas `<label>` (Accesibilidad)
+### Etiquetas `<label>` (Accesibilidad)
 
 Las etiquetas `<label>` son **esenciales** para la accesibilidad y usabilidad. Asocian texto descriptivo con un campo de formulario.
 
@@ -401,7 +401,7 @@ Las etiquetas `<label>` son **esenciales** para la accesibilidad y usabilidad. A
 </label>
 ```
 
-### B. Agrupación con `<fieldset>` y `<legend>`
+### Agrupación con `<fieldset>` y `<legend>`
 
 Estos elementos agrupan campos relacionados y mejoran la semántica y accesibilidad del formulario.
 
@@ -436,7 +436,7 @@ Estos elementos agrupan campos relacionados y mejoran la semántica y accesibili
 </form>
 ```
 
-### C. Validación HTML5
+### Validación HTML5
 
 HTML5 proporciona validación automática del lado del cliente antes de enviar el formulario.
 
@@ -463,7 +463,7 @@ HTML5 proporciona validación automática del lado del cliente antes de enviar e
 >
 ```
 
-### D. Atributo `autocomplete`
+### Atributo `autocomplete`
 
 Controla si el navegador debe autocompletar los campos del formulario basándose en el historial del usuario.
 
