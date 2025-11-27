@@ -1,11 +1,4 @@
-¡Excelente\! Damos el salto del lado del cliente (HTML, CSS, JS) al lado del **servidor** con **PHP**. Este es un hito crucial en la formación de un desarrollador web.
-
-Como su profesor de programación web, he preparado el material de estudio para la unidad de **Fundamentos de PHP**. Este material es la base para interactuar con bases de datos y manejar la lógica de negocio. 💻 🐘
-
-Aquí está el código fuente Markdown listo para su plataforma:
-
-````markdown
-# 🐘 Unidad: Fundamentos de PHP (Hypertext Preprocessor)
+# 🐘 Fundamentos de PHP
 
 **PHP** es un lenguaje de *scripting* del lado del **servidor**, diseñado principalmente para el desarrollo web. Permite generar contenido HTML dinámico, interactuar con bases de datos y gestionar sesiones.
 
@@ -21,7 +14,7 @@ El código PHP debe estar siempre encerrado entre marcadores para que el servido
 ?>
 ````
 
-**Nota:** Cada sentencia debe terminar con un **punto y coma (`;`)**.
+> **Nota:** Cada sentencia debe terminar con un **punto y coma (`;`)**.
 
 ### Variables y Constantes
 
