@@ -148,6 +148,51 @@ Ejecuta un bloque de código si la condición es `true`, y un bloque alternativo
 ?>
 ```
 
+### Operador Ternario
+
+El **operador ternario** es una forma compacta de escribir una estructura `if / else` simple. Es especialmente útil para asignaciones condicionales en una sola línea.
+
+**Sintaxis:**
+
+```php
+<?php
+    $variable = (condicion) ? valor_si_verdadero : valor_si_falso;
+?>
+```
+
+**Ejemplo:**
+
+```php
+<?php
+    $edad = 17;
+    $es_mayor = ($edad >= 18) ? "Sí" : "No";
+    
+    echo "¿Es mayor de edad? " . $es_mayor; // Salida: ¿Es mayor de edad? No
+?>
+```
+
+**Comparación con `if / else`:**
+
+```php
+<?php
+    // Usando if / else
+    $stock = 5;
+    if ($stock > 0) {
+        $mensaje = "Disponible";
+    } else {
+        $mensaje = "Agotado";
+    }
+    
+    // Usando operador ternario (equivalente)
+    $stock = 5;
+    $mensaje = ($stock > 0) ? "Disponible" : "Agotado";
+    
+    echo $mensaje; // Salida: Disponible
+?>
+```
+
+> **Nota:** El operador ternario es ideal para casos simples. Si la lógica es compleja, es preferible usar `if / else` para mantener la legibilidad del código.
+
 -----
 
 ## Manejo de Fechas
