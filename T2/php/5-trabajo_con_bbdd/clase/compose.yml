@@ -1,0 +1,44 @@
+version: "3"
+networks:
+  dev:
+services:
+  mysql:
+    image: docker.io/mysql:latest
+    restart: always
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: testdb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - dev
+  phpmyadmin:
+    image: docker.io/phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    restart: always
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "9000:80"
+    networks:
+      - dev
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: web
+    volumes:
+      - ./www:/var/www/html
+    ports:
+      - "8080:80"
+    networks:
+      - dev
+volumes:
+  mysql_data:
