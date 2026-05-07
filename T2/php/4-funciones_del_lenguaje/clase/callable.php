@@ -1,10 +1,10 @@
 <?php
 
-require_once 'config.php';
 
 function saludar($nombre) {
     echo "Hola, $nombre!";
 }
+
 
 function saludar_dev($nombre) {
     echo "Hola, $nombre! (Modo Debug)";
@@ -17,21 +17,18 @@ function despedir($nombre) {
 
 
 
-function emitMessage($nombre, $fn = "saludar") {
+
+
+
+
+
+function emitMessage(string $nombre, $fn = "saludar") {
+    if(!function_exists($fn)) {
+        return ;
+    }
     $fn($nombre);
     echo "\n";
 }
-
-emitMessage("Juan"); // Llama a saludar("Juan")
-emitMessage("María", "saludar_dev"); // Llama a saludar_dev("
-emitMessage("Pedro", "despedir"); // Llama a despedir("Pedro")
-
-
-
-
-
-
-
 
 
 ?>

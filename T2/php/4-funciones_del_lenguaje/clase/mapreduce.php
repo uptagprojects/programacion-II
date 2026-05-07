@@ -7,4 +7,5 @@ $saludar = function ($nombre) use ($saludo) {
 };
 
 $saludar("Mundo");
+
 ?>

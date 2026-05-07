@@ -1,5 +1,6 @@
 <?php
-function onMessage($message, $handler = null) {
+
+function onMessage(string $message, callable $handler = null) {
     if (!$handler) {
         return;
     }

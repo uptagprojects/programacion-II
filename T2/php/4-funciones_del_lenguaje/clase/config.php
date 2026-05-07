@@ -6,10 +6,12 @@ function mostrarErrores() {
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
+    echo "Modo de desarrollo activado: se mostrarán todos los errores.";
 }
 
 if(DEV_MODE) {
     mostrarErrores();
 }
+
 
 ?>
