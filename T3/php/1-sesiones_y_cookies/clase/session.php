@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 
 $_SESSION["usuario"] = "admin";
@@ -8,6 +9,8 @@ if (!isset($_SESSION["visitas"])) {
 }
 $_SESSION["visitas"]++;
 echo "Has visitado esta página " . $_SESSION["visitas"] . " veces.";
+
+
 
 
 $_SESSION = array(); // Vaciar todas las variables de sesión
@@ -21,6 +24,7 @@ if(isset($_SESSION["usuario"]) && $_SESSION["usuario"] == "admin") {
     echo "Acceso denegado.";
 }
 
+$_SESSION["tema"] = "oscuro";
 $_SESSION["usuario"] = array(); // vaciar la variable de sesión "usuario" sin destruir la sesión completa
 
 // Borrar la cookie de sesión
